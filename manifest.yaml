@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: echo
+spec:
+  containers:
+  - name: echo
+    image: echo:latest
+    imagePullPolicy: Never
+    command: ["echo", "1"]
+    args: ["2"]
